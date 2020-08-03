@@ -1,14 +1,19 @@
 import React from 'react'
-import { View } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import { InputPrimary, ButtonPrimary, ButtonSecondary } from '../common'
 
 const Form = () => {
 
   return (
-    <View>
+    <ScrollView>
       <InputPrimary
-        placeholder="Email"
+        placeholder="CNPJ"
+        style={{ marginBottom: 30 }}
+      />
+
+      <InputPrimary
+        placeholder="Nome"
         style={{ marginBottom: 30 }}
       />
 
@@ -16,14 +21,30 @@ const Form = () => {
         placeholder="Email"
         style={{ marginBottom: 30 }}
       />
+
+      <InputPrimary
+        placeholder="Confirmar Email"
+        style={{ marginBottom: 30 }}
+      />
+
+      <InputPrimary
+        placeholder="Confirmar Email"
+        style={{ marginBottom: 30 }}
+      />
+
+      <InputPrimary
+        placeholder="Confirmar Email"
+        style={{ marginBottom: 30 }}
+      />
       
       <ButtonPrimary
         label="ENTRAR"
       />
+      
       <ButtonSecondary
         label="CADASTRAR"
       />
-    </View>
+    </ScrollView>
   )
 }
 
