@@ -1,15 +1,28 @@
 import React from 'react'
-import { View, Button, StyleSheet } from 'react-native'
+import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
 const ButtonSecondary = props => {
 
   return (
-    <View>
-      <Button>{props.label}</Button>
-    </View>
+    <TouchableOpacity style={styles.button}>
+      <Text style={styles.label}>{props.label}</Text>
+    </TouchableOpacity>
   )
 }
 
-const styles = StyleSheet.crete({})
+const styles = StyleSheet.create({
+  button: {
+    height: 50,
+    marginTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#00B3FF',
+    borderRadius: 50
+  },
+  label: {
+    color: '#00B3FF'
+  }
+})
 
 export { ButtonSecondary }

@@ -1,24 +1,7 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet } from 'react-native'
+import Signin from './src/containers/Publics/Signin'
 
-const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hello GUGU</Text>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  title: {
-    color: '#000',
-    fontSize: 30
-  }
-})
+const App = () => <Signin />
 
 export default App
