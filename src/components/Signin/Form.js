@@ -13,7 +13,17 @@ const Form = () => {
       />
 
       <InputPrimary
+        placeholder="Razão Social"
+        style={{ marginBottom: 30 }}
+      />
+
+      <InputPrimary
         placeholder="Nome"
+        style={{ marginBottom: 30 }}
+      />
+
+      <InputPrimary
+        placeholder="CPF"
         style={{ marginBottom: 30 }}
       />
 
@@ -28,12 +38,12 @@ const Form = () => {
       />
 
       <InputPrimary
-        placeholder="Confirmar Email"
+        placeholder="Senha"
         style={{ marginBottom: 30 }}
       />
 
       <InputPrimary
-        placeholder="Confirmar Email"
+        placeholder="Confirmar Senha"
         style={{ marginBottom: 30 }}
       />
       
